@@ -43,18 +43,18 @@ const Quiz = () => {
       ) : (
         shuffledQuestions.length > 0 && (
           <>
-            <div className="question-section">
+            <div className="question-section px-10">
               <div className="question-count">
                 <span>Question {currentQuestion + 1}</span>/{shuffledQuestions.length}
               </div>
               <div className="question-text">{shuffledQuestions[currentQuestion].question}</div>
             </div>
-            <div className='answer-section'>
+            <div className='answer-section px-10'>
               {shuffledQuestions[currentQuestion].options.map((option, index) => (
                 <button 
                   onClick={() => handleAnswerOptionClick(index === shuffledQuestions[currentQuestion].answer)} 
                   key={index} 
-                  className='bg-gray-800 text-white hover:bg-green-500 mx-5'
+                className='bg-gray-800 text-white my-5 p-6 min-w-full flex flex-col items-center rounded-md'
                 >
                   {option}
                 </button>

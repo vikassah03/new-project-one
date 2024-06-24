@@ -3,36 +3,36 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-        <footer className="bg-gray-800 text-white ">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="mb-4 md:mb-0">
-            <h5 className="font-bold mb-2">About Us</h5>
-            <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel.</p>
+      <footer className="bg-green-900 text-white pt-7" >
+        <div className="container mx-auto ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="mb-4 md:mb-0 lg:pl-10">
+              <h5 className="font-bold mb-2">About Us</h5>
+              <p className="text-sm text-justify" >Coding Quiz Hub is dedicated to providing an engaging and interactive platform for coders of all levels. Our mission is to make learning to code fun and accessible for everyone. We offer a diverse range of quizzes covering various programming languages and concepts to help you build and test your coding skills. Whether you're preparing for a job interview, brushing up on your programming knowledge, or simply looking to challenge yourself, Coding Quiz Hub has something for you. Join our community of passionate learners and take your coding skills to the next level.</p>
+            </div>
+            <div className="mb-4 md:mb-0 lg:pl-40">
+              <h5 className="font-bold mb-2">Quick Links</h5>
+              <ul className="text-sm space-y-2">
+                <li><a href="#" className="hover:underline">Home</a></li>
+                <li><a href="#" className="hover:underline">About</a></li>
+                <li><a href="#" className="hover:underline">Services</a></li>
+                <li><a href="#" className="hover:underline">Contact</a></li>
+              </ul>
+            </div>
+            <div className='lg:pl-7'>
+              <h5 className="font-bold mb-2">Contact Us</h5>
+              <ul className="text-sm space-y-2">
+                <li><span className="font-semibold">Email:</span> info@example.com</li>
+                <li><span className="font-semibold">Phone:</span> +123 456 7890</li>
+                <li><span className="font-semibold">Address:</span> 123 Main St, Anytown, USA</li>
+              </ul>
+            </div>
           </div>
-          <div className="mb-4 md:mb-0">
-            <h5 className="font-bold mb-2">Quick Links</h5>
-            <ul className="text-sm space-y-2">
-              <li><a href="#" className="hover:underline">Home</a></li>
-              <li><a href="#" className="hover:underline">About</a></li>
-              <li><a href="#" className="hover:underline">Services</a></li>
-              <li><a href="#" className="hover:underline">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <h5 className="font-bold mb-2">Contact Us</h5>
-            <ul className="text-sm space-y-2">
-              <li><span className="font-semibold">Email:</span> info@example.com</li>
-              <li><span className="font-semibold">Phone:</span> +123 456 7890</li>
-              <li><span className="font-semibold">Address:</span> 123 Main St, Anytown, USA</li>
-            </ul>
+          <div className="mt-8 border-t border-gray-700 pt-4 text-center">
+            <p className="text-xs">&copy; 2024 Your Company. All rights reserved.</p>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-700 pt-4 text-center">
-          <p className="text-xs">&copy; 2024 Your Company. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
+      </footer>
     </div>
   )
 }

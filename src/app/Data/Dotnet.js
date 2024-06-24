@@ -42,10 +42,10 @@ export const questions = [
     {
         question: "What does JIT compilation do in .NET Framework?",
         options: [
-            "It converts C# code to machine code during development",
-            "It translates C# code into intermediate language (IL)",
-            "It optimizes the execution of C# code",
-            "It converts IL code into native machine code at runtime"
+            "Converts C# to machine code during development",
+            "Translates C# to intermediate language (IL)",
+            "Optimizes the execution of C# code",
+            "Converts IL to native machine code at runtime"
         ],
         answer: 3
     },
@@ -60,17 +60,17 @@ export const questions = [
         answer: 1
     },
     {
-        question: "What is the role of the Global Assembly Cache (GAC) in .NET Framework?",
+        question: "What is the role of the Global Assembly Cache (GAC)?",
         options: [
-            "To store system-wide shared assemblies",
-            "To cache HTTP responses",
-            "To manage local storage for web applications",
-            "To store SQL database objects"
+            "Stores system-wide shared assemblies",
+            "Caches HTTP responses",
+            "Manages local storage for web applications",
+            "Stores SQL database objects"
         ],
         answer: 0
     },
     {
-        question: "Which tool is used to build .NET applications from the command line?",
+        question: "Which tool is used to build .NET applications?",
         options: [
             "Visual Studio IDE",
             "dotnet command",
@@ -102,25 +102,25 @@ export const questions = [
     {
         question: "What is the purpose of Entity Framework in .NET?",
         options: [
-            "To handle dependency injection",
-            "To build responsive web applications",
-            "To provide an object-relational mapping (ORM) framework",
-            "To write unit tests"
+            "Handles dependency injection",
+            "Builds responsive web applications",
+            "Provides an object-relational mapping (ORM) framework",
+            "Writes unit tests"
         ],
         answer: 2
     },
     {
-        question: "What is the difference between .NET Core and .NET Framework?",
+        question: "Difference between .NET Core and .NET Framework?",
         options: [
-            ".NET Core is only for web applications, while .NET Framework is for desktop applications",
-            ".NET Core is open-source and cross-platform, while .NET Framework is primarily for Windows applications",
-            ".NET Core uses C# language, while .NET Framework uses Java",
-            ".NET Core supports only ASP.NET applications, while .NET Framework supports ASP.NET and ASP.NET Core"
+            ".NET Core is for web apps, .NET Framework for desktop",
+            ".NET Core is cross-platform, .NET Framework for Windows",
+            ".NET Core uses C#, .NET Framework uses Java",
+            ".NET Core supports ASP.NET, .NET Framework ASP.NET Core"
         ],
         answer: 1
     },
     {
-        question: "Which tool is used to manage dependencies in .NET projects?",
+        question: "Which tool manages dependencies in .NET projects?",
         options: [
             "dotnet CLI",
             "Visual Studio Code",
@@ -130,17 +130,17 @@ export const questions = [
         answer: 0
     },
     {
-        question: "What is the purpose of a NuGet package in .NET development?",
+        question: "What is a NuGet package in .NET?",
         options: [
-            "To build user interfaces",
-            "To manage database connections",
-            "To install libraries and tools",
-            "To debug applications"
+            "Builds user interfaces",
+            "Manages database connections",
+            "Installs libraries and tools",
+            "Debugs applications"
         ],
         answer: 2
     },
     {
-        question: "Which .NET technology is used for building cross-platform desktop applications?",
+        question: "Which .NET tech builds cross-platform desktop apps?",
         options: [
             "Windows Forms",
             "WPF (Windows Presentation Foundation)",
@@ -150,17 +150,17 @@ export const questions = [
         answer: 3
     },
     {
-        question: "What is the role of MSIL (Microsoft Intermediate Language) in .NET?",
+        question: "Role of MSIL (Microsoft Intermediate Language) in .NET?",
         options: [
-            "It is a database management system",
-            "It is the programming language used in .NET",
-            "It is a type of web server",
-            "It is the intermediate language that gets compiled into native machine code by JIT compiler"
+            "Database management system",
+            "Programming language in .NET",
+            "Type of web server",
+            "Intermediate language compiled to native machine code"
         ],
         answer: 3
     },
     {
-        question: "Which tool is used to create ASP.NET Core applications?",
+        question: "Tool for creating ASP.NET Core applications?",
         options: [
             "dotnet CLI",
             "Visual Studio IDE",
@@ -170,17 +170,17 @@ export const questions = [
         answer: 0
     },
     {
-        question: "What is the purpose of Dependency Injection (DI) in .NET?",
+        question: "Purpose of Dependency Injection (DI) in .NET?",
         options: [
-            "To handle user authentication",
-            "To manage database connections",
-            "To provide a way to create loosely coupled classes",
-            "To debug applications"
+            "Handles user authentication",
+            "Manages database connections",
+            "Creates loosely coupled classes",
+            "Debugs applications"
         ],
         answer: 2
     },
     {
-        question: "Which .NET component is responsible for managing data access?",
+        question: "Which .NET component manages data access?",
         options: [
             "Entity Framework",
             "ASP.NET Core",
@@ -190,17 +190,17 @@ export const questions = [
         answer: 0
     },
     {
-        question: "What is the role of Web API in .NET development?",
+        question: "Role of Web API in .NET development?",
         options: [
-            "To manage web servers",
-            "To build user interfaces",
-            "To create RESTful services that can be consumed by various clients",
-            "To debug applications"
+            "Manages web servers",
+            "Builds user interfaces",
+            "Creates RESTful services",
+            "Debugs applications"
         ],
         answer: 2
     },
     {
-        question: "Which .NET technology is used for building real-time web applications?",
+        question: "Which .NET tech builds real-time web applications?",
         options: [
             "ASP.NET Core",
             "Blazor",
@@ -210,47 +210,47 @@ export const questions = [
         answer: 2
     },
     {
-        question: "What does the 'async' and 'await' keywords do in C#?",
+        question: "'async' and 'await' keywords in C#?",
         options: [
-            "They define classes and methods",
-            "They handle asynchronous operations without blocking the thread",
-            "They are used to create unit tests",
-            "They manage database connections"
+            "Define classes and methods",
+            "Handle asynchronous operations without blocking",
+            "Create unit tests",
+            "Manage database connections"
         ],
         answer: 1
     },
     {
-        question: "What is the purpose of .NET Standard?",
+        question: "Purpose of .NET Standard?",
         options: [
-            "To develop mobile applications",
-            "To write unit tests",
-            "To create cross-platform libraries",
-            "To manage database connections"
+            "Develop mobile applications",
+            "Write unit tests",
+            "Create cross-platform libraries",
+            "Manage database connections"
         ],
         answer: 2
     },
     {
-        question: "What is the purpose of IIS (Internet Information Services) in .NET development?",
+        question: "Role of IIS (Internet Information Services) in .NET?",
         options: [
-            "To manage database connections",
-            "To host web applications",
-            "To create user interfaces",
-            "To write unit tests"
+            "Manage database connections",
+            "Host web applications",
+            "Create user interfaces",
+            "Write unit tests"
         ],
         answer: 1
     },
     {
-        question: "What is the role of LINQ (Language Integrated Query) in .NET?",
+        question: "Role of LINQ (Language Integrated Query) in .NET?",
         options: [
-            "To manage database connections",
-            "To create responsive web applications",
-            "To enable querying of data in C# and VB.NET",
-            "To debug applications"
+            "Manage database connections",
+            "Create responsive web applications",
+            "Query data in C# and VB.NET",
+            "Debug applications"
         ],
         answer: 2
     },
     {
-        question: "Which .NET technology is used for creating responsive web applications?",
+        question: "Which .NET tech creates responsive web applications?",
         options: [
             "Windows Forms",
             "WPF (Windows Presentation Foundation)",
@@ -260,17 +260,17 @@ export const questions = [
         answer: 3
     },
     {
-        question: "What is the purpose of .NET Core SDK?",
+        question: "Purpose of .NET Core SDK?",
         options: [
-            "To build Android applications",
-            "To manage dependencies",
-            "To write unit tests",
-            "To create cross-platform .NET Core applications"
+            "Build Android applications",
+            "Manage dependencies",
+            "Write unit tests",
+            "Create cross-platform .NET Core applications"
         ],
         answer: 3
     },
     {
-        question: "Which .NET technology is used for creating cloud-native applications?",
+        question: "Which .NET tech creates cloud-native applications?",
         options: [
             "ASP.NET Core",
             "Blazor",
@@ -280,17 +280,17 @@ export const questions = [
         answer: 0
     },
     {
-        question: "What is the purpose of Razor syntax in ASP.NET Core?",
+        question: "Purpose of Razor syntax in ASP.NET Core?",
         options: [
-            "To handle HTTP requests",
-            "To manage database connections",
-            "To build user interfaces",
-            "To write unit tests"
+            "Handle HTTP requests",
+            "Manage database connections",
+            "Build user interfaces",
+            "Write unit tests"
         ],
         answer: 2
     },
     {
-        question: "Which tool is used to create database migrations in Entity Framework Core?",
+        question: "Tool for creating database migrations in Entity Framework?",
         options: [
             "dotnet CLI",
             "Visual Studio IDE",
@@ -300,14 +300,53 @@ export const questions = [
         answer: 0
     },
     {
-        question: "What is the purpose of Middleware in ASP.NET Core?",
+        question: "Purpose of Middleware in ASP.NET Core?",
         options: [
-            "To manage database connections",
-            "To handle HTTP requests and responses",
-            "To create unit tests",
-            "To build user interfaces"
+            "Manage database connections",
+            "Handle HTTP requests and responses",
+            "Create unit tests",
+            "Build user interfaces"
         ],
         answer: 1
     },
-]
+    {
+        question: "What is .NET 5?",
+        options: [
+            "A web browser",
+            "An OS",
+            "A unification of .NET Framework and .NET Core",
+            "A database system"
+        ],
+        answer: 2
+    },
+    {
+        question: "What is Blazor?",
+        options: [
+            "A cloud service",
+            "A JavaScript library",
+            "A framework for building interactive web UIs",
+            "A testing tool"
+        ],
+        answer: 2
+    },
+    {
+        question: "What does ADO.NET provide?",
+        options: [
+            "UI components",
+            "Data access services",
+            "Testing frameworks",
+            "Security features"
+        ],
+        answer: 1
+    },
+    {
+        question: "What is WCF used for?",
+        options: [
+            "Database management",
+            "Web services",
+            "File storage",
+            "UI design"
+        ],
        
+    },
+]

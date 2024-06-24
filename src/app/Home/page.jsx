@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Footer from '../Footer/page';
 import Navbar from '../Navbar/page';
 
+
 export default function Home() {
   return (
     <div>
@@ -15,9 +16,7 @@ export default function Home() {
         <p className="text-justify mb-4">
           Welcome to Coding Quiz Hub, your ultimate destination for enhancing your programming skills through interactive and challenging quizzes. Whether you're a beginner just starting your coding journey or an experienced developer looking to test your knowledge, our platform offers a wide range of quizzes tailored to different skill levels and programming languages. Dive into our comprehensive collection of questions designed to help you learn, practice, and master coding concepts in a fun and engaging way. Track your progress, compete with friends, and climb the leaderboard as you improve your coding abilities. Start your adventure today and turn learning into an exciting experience with Coding Quiz Hub!
         </p>
-        <p className="text-justify mb-4">
-          Coding Quiz Hub is dedicated to providing an engaging and interactive platform for coders of all levels. Our mission is to make learning to code fun and accessible for everyone. We offer a diverse range of quizzes covering various programming languages and concepts to help you build and test your coding skills. Whether you're preparing for a job interview, brushing up on your programming knowledge, or simply looking to challenge yourself, Coding Quiz Hub has something for you. Join our community of passionate learners and take your coding skills to the next level.
-        </p>
+        
         <h1 className="text-center py-5 text-2xl">Key Features</h1>
         <p className="text-justify mb-4">
           <b className="text-blue-400">1. Diverse Quiz Categories:</b> Explore quizzes across a wide range of programming languages and technologies, including HTML, CSS, JavaScript, React.JS, Node.js, Python, PHP, and more. Each quiz is designed to challenge and enhance your understanding of coding concepts.
@@ -52,7 +51,7 @@ export default function Home() {
       <Head>
         <title>HTML Quiz</title>
         <meta name="description" content="A simple JavaScript quiz game created with Next.js" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Footer />
     </div>

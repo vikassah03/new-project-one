@@ -6,9 +6,14 @@ import Footer from '../Footer/page'
 const page = () => {
   return (
     <div>
+      <div>
       <Navbar/>
-      <CssQuiz/>
+      <main className='min-h-96'>
+        <h1 className='my-5 text-center text-2xl'>Css Quiz</h1>
+        <CssQuiz/>
+      </main>
       <Footer/>
+    </div>
     </div>
   )
 }

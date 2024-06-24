@@ -8,7 +8,7 @@ const html = () => {
     <div>
       <Navbar/>
       <main className='min-h-96'>
-        <h1 className='my-5 text-center text-2xl'>HTML Quiz</h1>
+        <h1 className='my-5 text-center text-2xl'>Node Quiz</h1>
         <Node/>
       </main>
       <Footer/>
