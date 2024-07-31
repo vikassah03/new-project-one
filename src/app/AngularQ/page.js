@@ -7,8 +7,9 @@ const html = () => {
   return (
     <div>
       <Navbar/>
-      <main className='min-h-96'>
+      <main className='min-h-96 py-28'>
         <h1 className='my-5 text-center text-2xl'>Angular Quiz</h1>
+        <hr/>
         <Angular/>
       </main>
       <Footer/>

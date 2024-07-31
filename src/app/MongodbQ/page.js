@@ -7,8 +7,9 @@ const html = () => {
   return (
     <div>
       <Navbar/> 
-      <main className='min-h-96'>
-        <h1 className='my-5 text-center text-2xl'>Monogodb Quiz</h1>
+      <main className='min-h-96 py-28'>
+        <h1 className='my-5 text-center text-2xl'>MongoDB Quiz</h1>
+        <hr/>
         <Monogodb/>
       </main>
       <Footer/>

@@ -13,23 +13,23 @@ const page = () => {
             <div className="mb-4 md:mb-0 lg:pl-40">
               <h5 className="font-bold mb-2">Quick Links</h5>
               <ul className="text-sm space-y-2">
-                <li><a href="#" className="hover:underline">Home</a></li>
-                <li><a href="#" className="hover:underline">About</a></li>
-                <li><a href="#" className="hover:underline">Services</a></li>
-                <li><a href="#" className="hover:underline">Contact</a></li>
+                <li><a href="./" className="hover:underline">Home</a></li>
+                <li><a href="/About" className="hover:underline">About</a></li>
+                <li><a href="/Privacypolicy" className="hover:underline">PrivacyPolicy</a></li>
+                <li><a href="/Contact" className="hover:underline">Contact</a></li>
               </ul>
             </div>
             <div className='lg:pl-7'>
               <h5 className="font-bold mb-2">Contact Us</h5>
               <ul className="text-sm space-y-2">
-                <li><span className="font-semibold">Email:</span> info@example.com</li>
-                <li><span className="font-semibold">Phone:</span> +123 456 7890</li>
-                <li><span className="font-semibold">Address:</span> 123 Main St, Anytown, USA</li>
+                <li><span className="font-semibold">Email:</span> sahvikas96@gmail.com</li>
+                <li><span className="font-semibold">Phone:</span> +91 9625650997</li>
+                <li><span className="font-semibold">Address:</span>435,R.K Puram, Sector-6, New Delhi(110022)</li>
               </ul>
             </div>
-          </div>
+          </div>  
           <div className="mt-8 border-t border-gray-700 pt-4 text-center">
-            <p className="text-xs">&copy; 2024 Your Company. All rights reserved.</p>
+            <p className="text-xs">&copy; 2024 CodingQuizHub. All rights reserved.</p>
           </div>
         </div>
       </footer>

@@ -298,5 +298,265 @@ export const questions = [
             "A monitoring tool for MongoDB"
         ],
         answer: 2
-    }
+    },
+    {
+        question: "What does the 'shard key' do in MongoDB?",
+        options: [
+            "Determines the distribution of data across shards",
+            "Indexes documents in a collection",
+            "Ensures data integrity",
+            "Manages transactions across shards"
+        ],
+        answer: 0
+    },
+    {
+        question: "What is the purpose of the 'arbiter' in a MongoDB replica set?",
+        options: [
+            "To store data in case of primary node failure",
+            "To handle read and write operations",
+            "To participate in elections but does not hold data",
+            "To backup data to secondary nodes"
+        ],
+        answer: 2
+    },
+    {
+        question: "Which command provides the current status of the replica set?",
+        options: [
+            "rs.status()",
+            "db.replicaStatus()",
+            "rs.info()",
+            "replicaStatus.show()"
+        ],
+        answer: 0
+    },
+    {
+        question: "How can you improve read performance in a MongoDB sharded cluster?",
+        options: [
+            "Increase the number of shards",
+            "Use compound indexes",
+            "Enable journaling",
+            "Use secondary preferred read preference"
+        ],
+        answer: 3
+    },
+    {
+        question: "What is the use of the $lookup aggregation stage?",
+        options: [
+            "To merge documents from multiple collections",
+            "To look up documents by a specific field",
+            "To join documents from different collections",
+            "To create indexes on fields"
+        ],
+        answer: 2
+    },
+    {
+        question: "Which of the following is a valid BSON data type?",
+        options: [
+            "double",
+            "float",
+            "currency",
+            "int"
+        ],
+        answer: 0
+    },
+    {
+        question: "What is the purpose of the 'write concern' in MongoDB?",
+        options: [
+            "To specify the level of acknowledgment requested from MongoDB for write operations",
+            "To ensure data is always written to disk",
+            "To maintain the order of write operations",
+            "To manage the consistency of read operations"
+        ],
+        answer: 0
+    },
+    {
+        question: "What does the 'caped' option do when creating a collection?",
+        options: [
+            "Sets a maximum size for the collection in bytes",
+            "Limits the number of documents in the collection",
+            "Creates a fixed-size collection that overwrites oldest entries",
+            "Indexes all fields automatically"
+        ],
+        answer: 2
+    },
+    {
+        question: "Which method is used to perform a bulk write operation in MongoDB?",
+        options: [
+            "bulkWrite()",
+            "batchInsert()",
+            "multiWrite()",
+            "bulkInsert()"
+        ],
+        answer: 0
+    },
+    {
+        question: "In MongoDB, what is an 'epoch' in the context of sharding?",
+        options: [
+            "The starting point in time for a shard key",
+            "A unique identifier for the sharding configuration",
+            "The time duration after which data is rebalanced",
+            "The version number of a shard"
+        ],
+        answer: 1
+    },
+    {
+        question: "How do you create a text index in MongoDB?",
+        options: [
+            "db.collection.createIndex({ field: 'text' })",
+            "db.collection.createTextIndex({ field: 1 })",
+            "db.collection.createIndex({ field: 'text' })",
+            "db.collection.createIndex({ field: 'text' })"
+        ],
+        answer: 0
+    },
+    {
+        question: "What is the default storage engine for MongoDB?",
+        options: [
+            "InnoDB",
+            "RocksDB",
+            "WiredTiger",
+            "TokuMX"
+        ],
+        answer: 2
+    },
+    {
+        question: "Which of the following is NOT a MongoDB deployment option?",
+        options: [
+            "Standalone",
+            "Cluster",
+            "Replica Set",
+            "Sharded Cluster"
+        ],
+        answer: 1
+    },
+    {
+        question: "What does the $facet aggregation stage do?",
+        options: [
+            "Allows multiple aggregation pipelines to run within a single stage",
+            "Partitions data into separate output collections",
+            "Filters documents based on conditions",
+            "Groups documents by a specified expression"
+        ],
+        answer: 0
+    },
+    {
+        question: "How can you handle duplicate keys in a MongoDB collection?",
+        options: [
+            "Use a unique index",
+            "Manually check for duplicates",
+            "Enable duplication prevention",
+            "Use the $key option"
+        ],
+        answer: 0
+    },
+    {
+        question: "Which option is used to optimize MongoDB queries?",
+        options: [
+            "use .hint() method",
+            "use .optimize() method",
+            "use .queryOptimizer() method",
+            "use .index() method"
+        ],
+        answer: 0
+    },
+    {
+        question: "What is the purpose of MongoDB's `mongostat` tool?",
+        options: [
+            "To display a summary of current MongoDB server statistics",
+            "To perform backups of the MongoDB database",
+            "To restore data from a backup",
+            "To manage user accounts and permissions"
+        ],
+        answer: 0
+    },
+    {
+        question: "How do you rename a collection in MongoDB?",
+        options: [
+            "db.collection.rename()",
+            "db.collection.renameCollection()",
+            "db.collection.renameTo()",
+            "db.collection.rename()"
+        ],
+        answer: 1
+    },
+    {
+        question: "Which of the following is a feature of MongoDB's aggregation framework?",
+        options: [
+            "Data validation",
+            "Data encryption",
+            "Data aggregation",
+            "Data replication"
+        ],
+        answer: 2
+    },
+    {
+        question: "What does the `mongorestore` tool do?",
+        options: [
+            "Restores data from a binary database dump",
+            "Backs up a MongoDB database",
+            "Analyzes MongoDB queries",
+            "Restores only the indexes"
+        ],
+        answer: 0
+    },
+    {
+        question: "What is the `balancer` in MongoDB?",
+        options: [
+            "A tool for balancing read and write loads",
+            "A process that moves chunks between shards",
+            "A method for balancing data in a collection",
+            "A feature for balancing user connections"
+        ],
+        answer: 1
+    },
+    {
+        question: "Which command is used to grant roles to a user in MongoDB?",
+        options: [
+            "grantRoles()",
+            "db.grant()",
+            "db.updateUser()",
+            "db.addRole()"
+        ],
+        answer: 2
+    },
+    {
+        question: "What is the role of `mongos` in a sharded cluster?",
+        options: [
+            "To manage storage and retrieval of data",
+            "To act as a query router for the sharded cluster",
+            "To handle replication of data",
+            "To backup and restore data"
+        ],
+        answer: 1
+    },
+    {
+        question: "How can you increase the maximum BSON document size in MongoDB?",
+        options: [
+            "Modify the configuration file",
+            "Increase the server's RAM",
+            "This limit cannot be increased",
+            "Use the `maxBsonSize` parameter"
+        ],
+        answer: 2
+    },
+    {
+        question: "What is the primary function of the `mongotop` utility?",
+        options: [
+            "To show the top collections by memory usage",
+            "To display a summary of database activity",
+            "To analyze performance of MongoDB queries",
+            "To display the amount of time a MongoDB instance spends reading and writing data"
+        ],
+        answer: 3
+    },
+    {
+        question: "Which operator can you use to perform a case-insensitive search in MongoDB?",
+        options: [
+            "$regex",
+            "$text",
+            "$case",
+            "$search"
+        ],
+        answer: 0
+    },
 ];

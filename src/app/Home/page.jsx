@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <Navbar />
       <div className="px-4 py-5 sm:px-6 lg:px-8">
-        <h1 className="text-center py-5 text-3xl text-gray-700">Welcome to Coding Quiz HUB</h1>
+        <h1 className="text-center py-5 mt-16 text-3xl text-gray-700">Welcome to Coding Quiz HUB</h1>
       </div>
       <div className="px-4 sm:px-6 lg:px-40">
         <p className="text-justify mb-4">
@@ -48,11 +48,7 @@ export default function Home() {
           <span>A5: Yes, you can compete with friends and other users globally. Climb the leaderboards by scoring high on quizzes and showcase your coding skills.</span>
         </p>
       </div>
-      <Head>
-        <title>HTML Quiz</title>
-        <meta name="description" content="A simple JavaScript quiz game created with Next.js" />
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+      
       <Footer />
     </div>
   );

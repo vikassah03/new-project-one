@@ -1,5 +1,5 @@
 "use client"
-
+import Link from 'next/link'
 import { useState, useEffect } from 'react';
 import React from 'react';
 import { questions } from '../Data/Javascript'; // Assuming questions are exported from this path
@@ -9,7 +9,7 @@ const Quiz = () => {
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
-  const [attemptedQuestions, setAttemptedQuestions] = useState(0);
+  const [attemptedQuestions, setAttemptedQuestions] = useState(1);
 
   useEffect(() => {
     // Shuffle questions when the component mounts
@@ -38,9 +38,15 @@ const Quiz = () => {
   return (
     <div className="quiz-container">
       {showScore ? (
-        <div className="score-section">
-          You scored {score} out of {attemptedQuestions} questions.
-        </div>
+        <div className="score-section mx-10">
+        You scored {score} out of {attemptedQuestions} questions.
+        <Link href="../" className="block mt-4 lg:inline-block  px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
+            Home
+          </Link>
+          <Link href="../ReactQ" className="block mt-4 lg:inline-block  px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
+            Next Quiz
+          </Link>
+      </div>
       ) : (
         shuffledQuestions.length > 0 && (
           <>
@@ -50,7 +56,7 @@ const Quiz = () => {
               </div>
               <div className="question-text">{shuffledQuestions[currentQuestion].question}</div>
             </div>
-            <div className='answer-section px-10'>
+            <div className='answer-section px-10 h-auto'>
               {shuffledQuestions[currentQuestion].options.map((option, index) => (
                 <button 
                   onClick={() => handleAnswerOptionClick(index === shuffledQuestions[currentQuestion].answer)} 
@@ -61,7 +67,7 @@ const Quiz = () => {
                 </button>
               ))}
             </div>
-            <button onClick={handleShowScoreClick} className='show-score-button bg-blue-500 text-white px-4 py-2 mt-4'>
+            <button onClick={handleShowScoreClick} className='show-score-button bg-gray-700 text-white px-4 py-2 mt-4 mx-10 my-5 rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 hover:bg-green-600 '>
               Show Score
             </button>
           </>

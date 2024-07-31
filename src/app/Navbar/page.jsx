@@ -1,4 +1,3 @@
-// src/app/Navbar/page.js
 "use client";
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -7,16 +6,24 @@ import img from '../../../img/coding-quiz.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
- 
-  // useEffect(() => window.document.scrollingElement?.scrollTo(0, 0), [])
+  const [currentPath, setCurrentPath] = useState('');
+  const [activeMenuItem, setActiveMenuItem] = useState('');
 
-  // return null
+  useEffect(() => {
+    setCurrentPath(window.location.pathname);
+  }, []);
+
+  const handleSelectChange = (path) => {
+    setActiveMenuItem(path);
+    window.location.href = path;
+  };
+
   return (
     <div>
-      <nav className="bg-green-500 p-4">
-        <div className="container mx-auto flex justify-between ">
-          <div className="text-white text-lg font-semibold ">
-            {/* <Link href="/"><Image src={img} alt="Coding Quiz" /></Link> */}
+      <nav className="bg-green-800 p-4 fixed top-0 left-0 w-full z-10">
+        <div className="container mx-auto flex justify-between items-center">
+          <div className={`text-white text-lg font-semibold ${isOpen ? 'hidden' : ''}`}>
+            <Link href="/"><Image src={img} alt="Coding Quiz" className='w-60'/></Link>
           </div>
           <div className="block lg:hidden">
             <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none absolute right-4 top-4">
@@ -25,30 +32,46 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className={`w-full lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'}`}>
-            <div className="text-white lg:flex lg:items-center">
-              <Link href="/" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">Home</Link>
-              <Link href="/About" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">About</Link>
-              <Link href="/Contect" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">Contect</Link>
-              <Link href="/Privacypolicy" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">Privacy Policy</Link>
-              <Link href="/HtmlQ" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">Html</Link>
-              <Link href="/CssQ" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">Css</Link>
-              <Link href="/JavascriptQ" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">JavaScript</Link>
-              <Link href="/ReactQ" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">React.JS</Link>
-              <Link href="/NextQ" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">Next.JS</Link>
-              <Link href="/NodeQ" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">Node.js</Link>
-              <Link href="/PhpQ" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">Php</Link>
-              <Link href="/PythonQ" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">Python</Link>
-              <Link href="/MysqlQ" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">MySQL</Link>
-              <Link href="/AngularQ" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">Angular</Link>
-              <Link href="/JavaQ" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">Java</Link>
-              <Link href="/DotnetQ" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">Dot Net</Link>
-              <Link href="/MonogodbQ" className="block mt-4 lg:inline-block lg:mt-0 lg:ml-6">MongoDB</Link>
+          <div className={`w-full ${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:w-auto`}>
+            <div className="text-white flex flex-col lg:flex-row lg:items-center">
+              <NavLink href="/" currentPath={currentPath}>Home</NavLink>
+              <NavLink href="/About" currentPath={currentPath}>About</NavLink>
+              <NavLink href="/HtmlQ" currentPath={currentPath}>Html</NavLink>
+              <NavLink href="/CssQ" currentPath={currentPath}>Css</NavLink>
+              <NavLink href="/JavascriptQ" currentPath={currentPath}>JavaScript</NavLink>
+              <NavLink href="/ReactQ" currentPath={currentPath}>React.JS</NavLink>
+              <NavLink href="/NextQ" currentPath={currentPath}>Next.JS</NavLink>
+              <NavLink href="/NodeQ" currentPath={currentPath}>Node.js</NavLink>
+              <NavLink href="/PhpQ" currentPath={currentPath}>Php</NavLink>
+              <NavLink href="/MysqlQ" currentPath={currentPath}>MySQL</NavLink>
+              <NavLink href="/AngularQ" currentPath={currentPath}>Angular</NavLink>
+              
+              <div className="relative group">
+                <div className={`hover:underline cursor-pointer lg:ml-5 ${activeMenuItem.includes('QuizMore') ? 'text-green-200' : ''}`} onClick={() => setActiveMenuItem('/QuizMore')} currentPath={currentPath}>Quiz More!</div>
+                <div className="absolute left-0 hidden group-hover:block bg-black text-white rounded">
+                  <div onClick={() => handleSelectChange("/PythonQ")} className={`p-2 px-10 text-center cursor-pointer ${activeMenuItem === '/PythonQ' ? 'bg-green-600' : 'hover:bg-green-600'}`}>Python</div>
+                  <div onClick={() => handleSelectChange("/JavaQ")} className={`p-2 px-10 text-center cursor-pointer ${activeMenuItem === '/JavaQ' ? 'bg-green-600' : 'hover:bg-green-600'}`}>Java</div>
+                  <div onClick={() => handleSelectChange("/DotnetQ")} className={`p-2 px-10 text-center cursor-pointer ${activeMenuItem === '/DotnetQ' ? 'bg-green-600' : 'hover:bg-green-600'}`}>Dotnet</div>
+                  <div onClick={() => handleSelectChange("/MongodbQ")} className={`p-2 px-10 text-center cursor-pointer ${activeMenuItem === '/MongoDBQ' ? 'bg-green-600' : 'hover:bg-green-600'}`}>MongoDB</div>
+                  {/* Add more options as needed */}
+                </div>
+              </div>
+              <NavLink href="/Privacypolicy" currentPath={currentPath}>Privacy Policy</NavLink>
+              <NavLink href="/Contact" currentPath={currentPath}>Contact</NavLink>
             </div>
           </div>
         </div>
       </nav>
     </div>
+  );
+}
+
+const NavLink = ({ href, children, currentPath }) => {
+  const isActive = currentPath === href;
+  return (
+    <Link href={href} className={`block mt-4 lg:inline-block lg:mt-0 lg:ml-6 ${isActive ? 'text-green-200' : ''}`}>
+      {children}
+    </Link>
   );
 }
 
