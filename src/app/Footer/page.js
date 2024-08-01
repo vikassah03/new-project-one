@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      <footer className="bg-green-900 text-white pt-7" >
+      <footer className="bg-green-900 text-white pt-7 md:px-7" >
         <div className="container mx-auto ">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="mb-4 md:mb-0 lg:pl-10">
