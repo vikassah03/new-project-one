@@ -15,7 +15,6 @@ const Navbar = () => {
 
   const handleSelectChange = (path) => {
     setActiveMenuItem(path);
-    window.location.href = path;
   };
 
   return (
@@ -46,14 +45,21 @@ const Navbar = () => {
               <NavLink href="/MysqlQ" currentPath={currentPath}>MySQL</NavLink>
               <NavLink href="/AngularQ" currentPath={currentPath}>Angular</NavLink>
               
-              <div className="relative group">
-                <div className={`hover:underline cursor-pointer lg:ml-5 ${activeMenuItem.includes('QuizMore') ? 'text-green-200' : ''}`} onClick={() => setActiveMenuItem('/QuizMore')} currentPath={currentPath}>Quiz More!</div>
-                <div className="absolute left-0 hidden group-hover:block bg-black text-white rounded">
-                  <div onClick={() => handleSelectChange("/PythonQ")} className={`p-2 px-10 text-center cursor-pointer ${activeMenuItem === '/PythonQ' ? 'bg-green-600' : 'hover:bg-green-600'}`}>Python</div>
-                  <div onClick={() => handleSelectChange("/JavaQ")} className={`p-2 px-10 text-center cursor-pointer ${activeMenuItem === '/JavaQ' ? 'bg-green-600' : 'hover:bg-green-600'}`}>Java</div>
-                  <div onClick={() => handleSelectChange("/DotnetQ")} className={`p-2 px-10 text-center cursor-pointer ${activeMenuItem === '/DotnetQ' ? 'bg-green-600' : 'hover:bg-green-600'}`}>Dotnet</div>
-                  <div onClick={() => handleSelectChange("/MongodbQ")} className={`p-2 px-10 text-center cursor-pointer ${activeMenuItem === '/MongoDBQ' ? 'bg-green-600' : 'hover:bg-green-600'}`}>MongoDB</div>
-                  {/* Add more options as needed */}
+              <div className="relative group mt-4 lg:mt-0 lg:ml-6">
+                <div className={`hover:underline cursor-pointer ${activeMenuItem.includes('QuizMore') ? 'text-green-200' : ''}`} onClick={() => setActiveMenuItem('/QuizMore')}>Quiz More</div>
+                <div className="absolute left-0 hidden group-hover:block bg-black text-white rounded ">
+                  <NavLink href="/PythonQ" currentPath={currentPath}>
+                    <div onClick={() => handleSelectChange("/PythonQ")} className={`p-2 px-10 text-center cursor-pointer ${activeMenuItem === '/PythonQ' ? 'bg-green-600 text-white' : 'hover:bg-green-600'}`}>Python</div>
+                  </NavLink>
+                  <NavLink href="/JavaQ" currentPath={currentPath}>
+                    <div onClick={() => handleSelectChange("/JavaQ")} className={`p-2 px-10 text-center cursor-pointer ${activeMenuItem === '/JavaQ' ? 'bg-green-600 text-white' : 'hover:bg-green-600'}`}>Java</div>
+                  </NavLink>
+                  <NavLink href="/DotnetQ" currentPath={currentPath}>
+                    <div onClick={() => handleSelectChange("/DotnetQ")} className={`p-2 px-10 text-center cursor-pointer ${activeMenuItem === '/DotnetQ' ? 'bg-green-600 text-white' : 'hover:bg-green-600'}`}>Dotnet</div>
+                  </NavLink>
+                  <NavLink href="/MongodbQ" currentPath={currentPath}>
+                    <div onClick={() => handleSelectChange("/MongodbQ")} className={`p-2 px-10 text-center cursor-pointer ${activeMenuItem === '/MongodbQ' ? 'bg-green-600 text-white' : 'hover:bg-green-600'}`}>MongoDB</div>
+                  </NavLink>
                 </div>
               </div>
               <NavLink href="/Privacypolicy" currentPath={currentPath}>Privacy Policy</NavLink>
@@ -74,5 +80,6 @@ const NavLink = ({ href, children, currentPath }) => {
     </Link>
   );
 }
+
 
 export default Navbar;
