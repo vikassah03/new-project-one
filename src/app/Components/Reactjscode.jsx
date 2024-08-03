@@ -48,6 +48,8 @@ const Quiz = () => {
          <Link href="../NextQ" className="block mt-4 lg:inline-block  px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
            Next Quiz
          </Link>
+         <h1 className='pt-10'>Benefits of Learning React.js</h1>
+         <p className='pt-10'>Learning React.js can offer numerous advantages for both budding and experienced web developers. React.js, developed by Facebook, is a powerful JavaScript library for building dynamic user interfaces, particularly single-page applications. One of the primary benefits of React.js is its component-based architecture, which allows developers to build reusable UI components, thereby promoting efficiency and consistency across applications. This modularity also simplifies the process of updating and maintaining code. React's virtual DOM enhances performance by optimizing rendering processes, resulting in faster and more responsive applications. Additionally, React's strong community support provides a wealth of resources, libraries, and tools, making it easier for developers to solve problems and stay updated with best practices. By learning React.js, developers can also improve their job prospects, as it's a highly sought-after skill in the industry, and gain the ability to work on cutting-edge projects and technologies.</p>
      </div>
       ) : (
         shuffledQuestions.length > 0 && (

@@ -48,6 +48,8 @@ const Quiz = () => {
           <Link href="../MysqlQ" className="block mt-4 lg:inline-block  px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
             Next Quiz
           </Link>
+          <h1 className='pt-10'>Advantages of Learning Python</h1>
+          <p className='pt-10'>Python offers numerous benefits due to its versatility and ease of use. Its clean syntax and readability make it an excellent choice for beginners and experienced developers alike. Python is widely used in various domains, including web development, data analysis, machine learning, and automation. Its extensive libraries and frameworks, such as Django and Flask for web development, and Pandas and TensorFlow for data science, empower developers to tackle a broad range of projects. By learning Python, you position yourself to work in diverse fields and solve complex problems efficiently, making you a valuable asset in the tech industry.</p>
       </div>
       ) : (
         shuffledQuestions.length > 0 && (

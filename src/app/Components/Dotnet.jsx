@@ -48,6 +48,8 @@ const Quiz = () => {
          <Link href="../MongodbQ" className="block mt-4 lg:inline-block  px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
            Next Quiz
          </Link>
+         <h1 className='pt-10'>Benefits of Learning .NET</h1>
+         <p className='pt-10'>Learning .NET offers several advantages for developers looking to advance their careers and skill sets. Firstly, .NET is a versatile and powerful framework developed by Microsoft, supporting multiple programming languages such as C#, F#, and VB.NET. This flexibility allows developers to create a wide range of applications, from web and desktop applications to mobile apps and cloud-based solutions. Moreover, .NET's robust performance, security features, and extensive library support enable developers to build high-quality, scalable applications efficiently. Additionally, with the growing demand for .NET developers in the job market, acquiring .NET skills can significantly enhance job prospects and lead to lucrative career opportunities. Companies across various industries value .NET expertise, making it a valuable asset for both aspiring and experienced developers. Lastly, .NET's active community and comprehensive documentation provide ample resources for learning and troubleshooting, ensuring that developers can continuously improve their skills and stay updated with the latest advancements in the framework.</p>
      </div>
       ) : (
         shuffledQuestions.length > 0 && (

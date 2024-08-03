@@ -48,6 +48,8 @@ const Quiz = () => {
           <Link href="../JavaQ" className="block mt-4 lg:inline-block px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
             Next Quiz
           </Link>
+          <h1 className='pt-10'>Benefits of Learning Angular</h1>
+          <p className='pt-10'>Learning Angular, a popular framework for building dynamic web applications, offers several significant advantages. Firstly, Angular provides a structured and organized approach to application development, which can enhance productivity and maintainability. It incorporates powerful features like two-way data binding, dependency injection, and a modular architecture, making it easier to manage complex applications. Additionally, Angular’s robust ecosystem, including a vast library of tools and extensions, allows developers to streamline their workflow and integrate various functionalities seamlessly. By mastering Angular, developers can create scalable and high-performance applications while staying competitive in the job market. Moreover, Angular's strong community support and regular updates ensure that developers have access to the latest best practices and improvements, further enhancing their skills and project outcomes. Overall, learning Angular can significantly boost one’s career prospects and technical expertise in web development.</p>
         </div>
       ) : (
         shuffledQuestions.length > 0 && (
@@ -72,6 +74,7 @@ const Quiz = () => {
             <button onClick={handleShowScoreClick} className='show-score-button bg-gray-700 text-white px-4 py-2 mt-4 mx-10 my-5 rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-green-600'>
               Show Score
             </button>
+            
           </>
         )
       )}

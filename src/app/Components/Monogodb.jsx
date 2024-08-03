@@ -48,6 +48,8 @@ const Quiz = () => {
           <Link href="../HtmlQ" className="block mt-4 lg:inline-block  px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
             Next Quiz
           </Link>
+          <h1 className='pt-10'>Benefits of Learning MongoDB</h1>
+          <p className='pt-10'>Learning MongoDB, a popular NoSQL database, can offer numerous advantages. First and foremost, MongoDB’s schema-less nature provides flexibility in storing and managing data. This allows for easy evolution and adaptation of data structures without requiring rigid schemas. Additionally, MongoDB's scalability ensures that it can handle large volumes of data and high traffic loads efficiently, making it ideal for applications with rapidly changing data requirements. Its built-in replication and sharding features enhance data availability and performance, contributing to a more robust and reliable system. Furthermore, MongoDB integrates seamlessly with various programming languages and frameworks, making it a valuable skill for developers working on diverse projects. Overall, mastering MongoDB can lead to improved data management capabilities and open up new opportunities in the tech industry.</p>
       </div>
       ) : (
         shuffledQuestions.length > 0 && (

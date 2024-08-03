@@ -47,6 +47,8 @@ const Quiz = () => {
           <Link href="../CssQ" className="block mt-4 lg:inline-block  px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
             Next Quiz
           </Link>
+          <h1 className='pt-10'>Benefits of Learning HTML</h1>
+          <p className='pt-10'> Learning HTML (HyperText Markup Language) offers numerous advantages, especially for those interested in web development. Firstly, HTML is the foundational language of the web, allowing you to create and structure content on the internet. By understanding HTML, you can build websites, create web pages, and add text, images, and links to your content. This knowledge is essential for anyone looking to start a career in web development or design. Additionally, learning HTML enhances your understanding of how the web works, making it easier to learn other web technologies such as CSS and JavaScript. It also empowers you to customize website templates, improve SEO by structuring content appropriately, and collaborate more effectively with developers if you work in a related field. Overall, HTML is a valuable skill that opens up numerous opportunities in the digital world.</p>
       </div>
       ) : (
         shuffledQuestions.length > 0 && (

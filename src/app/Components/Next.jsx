@@ -48,6 +48,8 @@ const Quiz = () => {
           <Link href="../NodeQ" className="block mt-4 lg:inline-block  px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
             Next Quiz
           </Link>
+          <h1 className='pt-10'>Benefits of Learning Next.js</h1>
+          <p className='pt-10'>Mastering Next.js, a powerful React framework, can significantly enhance your web development capabilities. It provides built-in server-side rendering and static site generation, which improve the performance and SEO of your web applications. Next.js also offers automatic code splitting, which means that users only download the JavaScript needed for the page they are on, reducing load times and improving user experience. By learning Next.js, you can build highly optimized, production-ready applications with minimal configuration, making you a more efficient and effective web developer.</p>
       </div>
       ) : (
         shuffledQuestions.length > 0 && (

@@ -47,6 +47,8 @@ const Quiz = () => {
           <Link href="../JavascriptQ" className="block mt-4 lg:inline-block  px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
             Next Quiz
           </Link>
+          <h1 className='pt-10'>Benefits of Learning CSS</h1>
+          <p className='pt-10'>Learning CSS (Cascading Style Sheets) offers numerous advantages for web developers and designers. Firstly, CSS allows you to control the visual appearance of your website, enabling you to create visually appealing and user-friendly interfaces. With CSS, you can customize colors, fonts, layouts, and animations, which enhances the overall user experience and makes your website more engaging. Secondly, CSS promotes separation of content and design, making your HTML code cleaner and easier to maintain. This separation also facilitates responsive design, allowing your website to adapt to different screen sizes and devices seamlessly. Moreover, knowledge of CSS opens up career opportunities in web development and design, as it is a fundamental skill required by most employers in the tech industry. By mastering CSS, you can improve your problem-solving skills, stay updated with web development trends, and create professional and dynamic websites that stand out in a competitive market.</p>
       </div>
       ) : (
         shuffledQuestions.length > 0 && (

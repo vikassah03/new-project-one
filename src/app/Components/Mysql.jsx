@@ -48,6 +48,8 @@ const Quiz = () => {
          <Link href="../AngularQ" className="block mt-4 lg:inline-block  px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
            Next Quiz
          </Link>
+         <h1 className='pt-10'>Benefits of Learning MySQL</h1>
+         <p className='pt-10'>Learning MySQL, a popular relational database management system, can offer numerous benefits. MySQL is widely used in web development and various applications due to its reliability, performance, and ease of use. Understanding MySQL enables you to efficiently design and manage databases, which is crucial for handling data-driven applications. It enhances your ability to create, modify, and query databases, which can improve the functionality and scalability of your applications. Additionally, proficiency in MySQL can boost your career prospects, as many companies seek professionals skilled in database management. Overall, mastering MySQL can lead to better job opportunities, increased productivity in data management tasks, and a stronger foundation in database concepts.</p>
      </div>
       ) : (
         shuffledQuestions.length > 0 && (

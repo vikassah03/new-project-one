@@ -48,6 +48,8 @@ const Quiz = () => {
          <Link href="../PythonQ" className="block mt-4 lg:inline-block  px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
            Next Quiz
          </Link>
+         <h1 className='pt-10'>Benefits of Learning PHP</h1>
+         <p className='pt-10'>PHP remains a crucial language in web development, especially for server-side scripting. Learning PHP can be beneficial for working with a wide range of content management systems (CMS) like WordPress, Joomla, and Drupal. It is particularly useful for developing dynamic web pages, handling form submissions, and interacting with databases. PHP is known for its ease of integration with various databases such as MySQL and its extensive community support. By acquiring PHP skills, you gain the ability to maintain and develop server-side applications and contribute to projects that rely on this time-tested technology.</p>
      </div>
       ) : (
         shuffledQuestions.length > 0 && (

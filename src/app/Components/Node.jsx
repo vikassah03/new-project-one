@@ -48,6 +48,8 @@ const Quiz = () => {
           <Link href="../PhpQ" className="block mt-4 lg:inline-block  px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
             Next Quiz
           </Link>
+          <h1 className='pt-10'>Advantages of Learning Node.js</h1>
+          <p className='pt-10'>Learning Node.js can be highly advantageous for your development career. Node.js allows you to use JavaScript for server-side programming, enabling you to build scalable and high-performance network applications. Its non-blocking, event-driven architecture is ideal for handling numerous simultaneous connections with minimal overhead. Additionally, Node.js has a rich ecosystem of libraries and modules via npm, which can speed up development and enhance functionality. Mastering Node.js can streamline your full-stack development process, allowing you to handle both frontend and backend tasks with a unified language.</p>
       </div>
       ) : (
         shuffledQuestions.length > 0 && (
