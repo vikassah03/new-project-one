@@ -28,11 +28,13 @@ const Quiz = () => {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
   const handleShowScoreClick = () => {
     setShowScore(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (

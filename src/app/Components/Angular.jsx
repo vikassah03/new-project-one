@@ -1,5 +1,5 @@
-"use client"
-import Link from 'next/link'
+"use client";
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import React from 'react';
 import { questions } from '../Data/Angular'; // Assuming questions are exported from this path
@@ -28,11 +28,13 @@ const Quiz = () => {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top when the score is shown
     }
   };
 
   const handleShowScoreClick = () => {
     setShowScore(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top when the score is shown
   };
 
   return (
@@ -40,12 +42,12 @@ const Quiz = () => {
       {showScore ? (
         <div className="score-section mx-10">
           You scored {score} out of {attemptedQuestions} questions.
-          <Link href="../" className="block mt-4 lg:inline-block  px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
-              Home
-            </Link>
-            <Link href="../JavaQ" className="block mt-4 lg:inline-block  px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
-              Next Quiz
-            </Link>
+          <Link href="../" className="block mt-4 lg:inline-block px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
+            Home
+          </Link>
+          <Link href="../JavaQ" className="block mt-4 lg:inline-block px-4 py-2 mx-10 text-center bg-slate-400 rounded text-white text-lg hover:underline">
+            Next Quiz
+          </Link>
         </div>
       ) : (
         shuffledQuestions.length > 0 && (
@@ -61,13 +63,13 @@ const Quiz = () => {
                 <button 
                   onClick={() => handleAnswerOptionClick(index === shuffledQuestions[currentQuestion].answer)} 
                   key={index} 
-                className='bg-gray-800 text-white my-5 p-6 min-w-full flex flex-col items-center rounded-md'
+                  className='bg-gray-800 text-white my-5 p-6 min-w-full flex flex-col items-center rounded-md'
                 >
                   {option}
                 </button>
               ))}
             </div>
-            <button onClick={handleShowScoreClick} className='show-score-button bg-gray-700 text-white px-4 py-2 mt-4 mx-10 my-5 rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 hover:bg-green-600 '>
+            <button onClick={handleShowScoreClick} className='show-score-button bg-gray-700 text-white px-4 py-2 mt-4 mx-10 my-5 rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-green-600'>
               Show Score
             </button>
           </>

@@ -141,16 +141,7 @@ export const questions = [
     ],
     answer: 1
   },
-  {
-    question: "How can you create a hyperlink in HTML?",
-    options: [
-      "<a>http://www.example.com</a>",
-      "<a url='http://www.example.com'>example</a>",
-      "<a href='http://www.example.com'>example</a>",
-      "<a link='http://www.example.com'>example</a>"
-    ],
-    answer: 2
-  },
+  
   {
     question: "Which HTML element is used to define important text?",
     options: [
@@ -251,16 +242,7 @@ export const questions = [
     ],
     answer: 0
   },
-  {
-    question: "How can you create an e-mail link?",
-    options: [
-      "<a href='mailto:someone@example.com'>",
-      "<a href='email'>someone@example.com</a>",
-      "<mail href='someone@example.com'>",
-      "<a email='someone@example.com'>"
-    ],
-    answer: 0
-  },
+  
   {
     question: "Which HTML attribute is used to define inline styles?",
     options: [

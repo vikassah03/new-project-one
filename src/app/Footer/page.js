@@ -24,7 +24,7 @@ const page = () => {
             <div className='lg:pl-7'>
               <h5 className="font-bold mb-2">Contact Us</h5>
               <ul className="text-sm space-y-2">
-                <li><span className="font-semibold">Email:</span> sahvikas96@gmail.com</li>
+                <li><span className="font-semibold">Email:</span> mdv657492@gmail.com</li>
                 <li><span className="font-semibold">Phone:</span> +91 9625650997</li>
                 <li><span className="font-semibold">Address:</span> 435, R.K Puram, Sector-6, New Delhi (110022)</li>
               </ul>

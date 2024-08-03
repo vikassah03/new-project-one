@@ -8,7 +8,7 @@ const page = () => {
       <div className='px-4 sm:px-6 lg:px-40 text-justify py-28'>
       <h1 className="text-center py-5 text-3xl text-gray-700">Privacy Policy</h1>
       <hr />
-      <p>Last Updated: 31-July-2024</p>
+      <p>Last Updated: 3-August-2024</p>
       <h3 className="text-center py-5 text-2xl text-gray-700">1. Introduction</h3>
       <p>Welcome to CodingQuizHub. We respect your privacy and are committed to protecting any personal information you may provide while visiting our site. However, please note that our website currently does not have user login or logout functionalities, nor do we collect, store, or process any personal data from our visitors. This policy outlines our approach to user privacy and data protection.</p>
       <h3 className="text-center py-5 text-2xl text-gray-700">2. Information We Collect</h3>
