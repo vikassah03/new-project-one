@@ -60,11 +60,7 @@ const html = () => {
         Our team is made up of passionate developers, educators, and content creators who are dedicated to making Coding Quiz Hub the best resource for learning to code. We work tirelessly to bring you high-quality quizzes, challenges, and learning resources that are both fun and effective.
     </p>
     
-    <img 
-        src="/path-to-your-image/team-photo.jpg" 
-        alt="Our Team" 
-        className="w-full h-auto my-6" 
-    />
+    
     
     <p className="text-justify mb-4">
         From coding experts who design our quizzes to the support team who assist you, everyone at Coding Quiz Hub is here to ensure you have the best possible experience. We believe in continuous learning and growth, and we are here to support you every step of the way. Our team is always ready to listen to your feedback and continuously improve our platform to better serve your needs.

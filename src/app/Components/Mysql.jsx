@@ -80,15 +80,15 @@ const Quiz = () => {
               ))}
             </tbody>
           </table>
-          <div className="button-group mt-6">
-            <button onClick={handleTryAgainClick} className="block mt-4 lg:inline-block sm:px-7 px-4 py-2 mx-10 bg-slate-400 rounded text-white text-lg hover:underline">
-              Try Again
-            </button>
+          <div className="button-group mt-6 flex flex-col lg:flex-row lg:justify-center">
+  <button onClick={handleTryAgainClick} className="mt-4 sm:px-7 px-4 py-2 bg-slate-400 rounded text-white text-lg hover:underline">
+    Try Again
+  </button>
 
-            <Link href="../AngularQ" className="block mt-4 lg:inline-block px-4 py-2 mx-10 bg-slate-400 rounded text-white text-lg hover:underline">
-              Next Quiz
-            </Link>
-          </div>
+  <Link href="../AngularQ" className="mt-4 sm:px-7 px-4 py-2 bg-slate-400 rounded text-white text-lg hover:underline lg:ml-4 text-center">
+    Next Quiz
+  </Link>
+</div>
         </div>
       ) : (
         shuffledQuestions.length > 0 && (
