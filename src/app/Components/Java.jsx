@@ -69,8 +69,8 @@ const Quiz = () => {
             <tbody>
               {attemptedQuestions.map((item, index) => (
                 <tr key={index} className={index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}>
-                  <td className="border px-4 py-2">{item.question.question}</td>
-                  <td className="border px-4 py-2">
+                  <td className="border  py-2">{item.question.question}</td>
+                  <td className="border  py-2">
                     {item.isCorrect ? 'Correct' : 'Incorrect'}
                   </td>
                   <td className="border px-4 py-2">
