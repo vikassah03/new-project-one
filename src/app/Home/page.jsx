@@ -3,52 +3,145 @@ import React from 'react';
 import Head from 'next/head';
 import Footer from '../Footer/page';
 import Navbar from '../Navbar/page';
+import home1 from '../../../img/home1.jpg';
+import home2 from '../../../img/home2.jpg';
+import home3 from '../../../img/home3.jpg';
+import home4 from '../../../img/home4.jpg';
+import home5 from '../../../img/home5.png';
+import home6 from '../../../img/home6.jpg';
+import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+import 'swiper/css/navigation';  // Navigation module CSS
+import 'swiper/css/pagination';  // Pagination module CSS
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 
 export default function Home() {
   return (
     <div>
       <Navbar />
-      <div className="px-4 py-5 sm:px-6 lg:px-8">
-        <h1 className="text-center py-5 mt-16 text-3xl text-gray-700">Welcome to Coding Quiz HUB</h1>
+      <div>
+        <div className="relative w-full">
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{ delay: 3000 }}
+            pagination={{ clickable: true }}
+            navigation={true}
+            modules={[Navigation, Pagination, Autoplay]}
+          >
+            <SwiperSlide>
+              <div className="relative h-64 md:h-96">
+                <Image
+                  src={home1}
+                  alt="Slide 1"
+                  className="object-cover w-full h-full"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+                  <h2 className="text-white text-2xl md:text-4xl font-bold">
+                    Welcome to CodingQuizHub
+                  </h2>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="relative h-64 md:h-96">
+                <Image
+                  src={home2}
+                  alt="Slide 2"
+                  className="object-cover w-full h-full"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+                  <h2 className="text-white text-2xl md:text-4xl font-bold">
+                    Explore Coding Challenges
+                  </h2>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="relative h-64 md:h-96">
+                <Image
+                  src={home3}
+                  alt="Slide 3"
+                  className="object-cover w-full h-full"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+                  <h2 className="text-white text-2xl md:text-4xl font-bold">
+                    Sharpen Your Skills
+                  </h2>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
-      <div className="px-4 sm:px-6 lg:px-40">
-        <p className="text-justify mb-4">
-          Welcome to Coding Quiz Hub, your ultimate destination for enhancing your programming skills through interactive and challenging quizzes. Whether you're a beginner just starting your coding journey or an experienced developer looking to test your knowledge, our platform offers a wide range of quizzes tailored to different skill levels and programming languages. Dive into our comprehensive collection of questions designed to help you learn, practice, and master coding concepts in a fun and engaging way. Track your progress, compete with friends, and climb the leaderboard as you improve your coding abilities. Start your adventure today and turn learning into an exciting experience with Coding Quiz Hub!
-        </p>
-        
-        <h1 className="text-center py-5 text-2xl">Key Features</h1>
-        <p className="text-justify mb-4">
-          <b className="text-blue-400">1. Diverse Quiz Categories:</b> Explore quizzes across a wide range of programming languages and technologies, including HTML, CSS, JavaScript, React.JS, Node.js, Python, PHP, and more. Each quiz is designed to challenge and enhance your understanding of coding concepts.
-          <br />
-          <b className="text-blue-400">2. Track Your Progress:</b> Monitor your progress with detailed statistics and performance metrics. Identify your strengths and areas for improvement to focus your learning efforts effectively.
-          <br />
-          <b className="text-blue-400">3. Leaderboards and Competitions:</b> Compete with friends and other coders from around the world. Climb the leaderboards by scoring high on quizzes and showcase your coding prowess.
-          <br />
-          <b className="text-blue-400">4. Regular Updates:</b> Stay updated with new quizzes and coding challenges regularly added to the platform. Keep your skills sharp and up-to-date with the latest programming trends and technologies.
-          <br />
-          <b className="text-blue-400">5. Community Support:</b> Join our vibrant community of coders. Share your experiences, seek help, and collaborate with fellow learners. Participate in discussions and contribute to our growing knowledge base.
-        </p>
-        <h1 className="text-center py-5 text-2xl">FAQ Section</h1>
-        <b>Frequently Asked Questions (FAQ)</b>
-        <p className="text-justify mb-4">
-          <span className="text-red-500">Q1: How can I start taking quizzes on Coding Quiz Hub?</span><br />
-          <span>A1: Simply sign up for a free account, choose your preferred programming language or topic, and start taking quizzes right away!</span>
-          <br />
-          <span className="text-red-500">Q2: Are the quizzes suitable for beginners?</span><br />
-          <span>A2: Yes, we offer quizzes for all skill levels, from beginners to advanced coders. Each quiz is designed to match your proficiency and help you learn at your own pace.</span>
-          <br />
-          <span className="text-red-500">Q3: Can I track my progress on the platform?</span><br />
-          <span>A3: Absolutely! Our platform provides detailed statistics and performance metrics to help you track your progress and identify areas for improvement.</span>
-          <br />
-          <span className="text-red-500">Q4: How often are new quizzes added?</span><br />
-          <span>A4: We regularly update our platform with new quizzes and coding challenges to keep you engaged and up-to-date with the latest programming trends.</span>
-          <br />
-          <span className="text-red-500">Q5: Can I compete with other users?</span><br />
-          <span>A5: Yes, you can compete with friends and other users globally. Climb the leaderboards by scoring high on quizzes and showcase your coding skills.</span>
-        </p>
-      </div>
-      
+
+
+
+      <div className="px-4 sm:px-6 lg:px-40 pt-10">
+  {/* First Section: Image Left, Text Right */}
+  <div className="flex flex-col lg:flex-row items-center mb-4">
+    <div className="lg:w-1/2 mb-4 lg:mb-0">
+      <Image src={home4} alt="Learning Path" className="w-full h-auto" />
+    </div>
+    <div className="lg:w-1/2 lg:pl-6">
+      <p className="text-justify">
+        Welcome to Coding Quiz Hub, your ultimate destination for enhancing your programming skills through interactive and challenging quizzes. Whether you're a beginner just starting your coding journey or an experienced developer looking to test your knowledge, our platform offers a wide range of quizzes tailored to different skill levels and programming languages. Dive into our comprehensive collection of questions designed to help you learn, practice, and master coding concepts in a fun and engaging way. Track your progress, compete with friends, and climb the leaderboard as you improve your coding abilities. Start your adventure today and turn learning into an exciting experience with Coding Quiz Hub!
+      </p>
+    </div>
+  </div>
+
+  <h2 className="text-center py-5 text-2xl">Why Choose Coding Quiz Hub?</h2>
+
+  {/* Second Section: Text Left, Image Right */}
+  <div className="flex flex-col lg:flex-row-reverse items-center mb-4">
+    <div className="lg:w-1/2 mb-4 lg:mb-0">
+      <Image src={home5} alt="Coding Challenges" className="w-full h-auto" />
+    </div>
+    <div className="lg:w-1/2 lg:pr-6">
+      <p className="text-justify">
+        At Coding Quiz Hub, we believe that learning to code should be an engaging and rewarding experience. Here’s why our platform stands out:
+        <ul className="list-disc list-inside mb-4">
+          <li><b className="text-blue-400">Interactive Learning:</b> Our quizzes are designed to be interactive, offering instant feedback and explanations for each question. This helps reinforce your learning and ensures that you understand the concepts thoroughly.</li>
+          <li><b className="text-blue-400">Tailored Learning Paths:</b> We provide personalized learning paths based on your skill level and interests, helping you focus on the areas that matter most to you.</li>
+          <li><b className="text-blue-400">Comprehensive Coverage:</b> From basic syntax to advanced algorithms, our quizzes cover a wide spectrum of topics across various programming languages.</li>
+          <li><b className="text-blue-400">Real-World Scenarios:</b> Many of our quizzes are based on real-world coding challenges, preparing you for actual coding tasks you might encounter in your career.</li>
+          <li><b className="text-blue-400">User-Friendly Interface:</b> Our platform is easy to navigate, allowing you to find quizzes quickly and track your progress effortlessly.</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <h2 className="text-center py-5 text-2xl">Our Mission</h2>
+
+  {/* Third Section: Image Left, Text Right */}
+  <div className="flex flex-col lg:flex-row items-center mb-4">
+    <div className="lg:w-1/2 mb-4 lg:mb-0">
+      <Image src={home6} alt="Community Engagement" className="w-full h-auto" />
+    </div>
+    <div className="lg:w-1/2 lg:pl-6">
+      <p className="text-justify">
+        Our mission at Coding Quiz Hub is to empower individuals to achieve their coding potential through a fun and supportive learning environment. We aim to:
+        <ul className="list-disc list-inside mb-4">
+          <li><b className="text-blue-400">Foster Creativity:</b> Encourage learners to think outside the box and solve coding problems creatively.</li>
+          <li><b className="text-blue-400">Promote Lifelong Learning:</b> Provide resources that help you continue growing your coding skills throughout your career.</li>
+          <li><b className="text-blue-400">Build a Global Community:</b> Connect coders from all over the world, fostering collaboration and shared knowledge.</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  
+
+  <h2 className="text-center py-5 text-2xl">Get Started Now</h2>
+  <p className="text-justify mb-4">
+    Ready to take your coding skills to the next level? Sign up today and join thousands of learners who are mastering coding through fun and interactive quizzes. Whether you're aiming to learn a new programming language or sharpen your existing skills, Coding Quiz Hub is the perfect place to start. Let's begin your journey to becoming a coding expert!
+  </p>
+</div>
+
+
       <Footer />
     </div>
   );
