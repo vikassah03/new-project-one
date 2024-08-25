@@ -85,7 +85,7 @@ const Quiz = () => {
               Try Again
             </button>
 
-            <Link href="../JavaQ" className="block mt-4 lg:inline-block px-4 py-2 mx-10 bg-slate-400 rounded text-white text-lg hover:underline">
+            <Link href="../NodeQ" className="block mt-4 lg:inline-block px-4 py-2 mx-10 bg-slate-400 rounded text-white text-lg hover:underline">
               Next Quiz
             </Link>
           </div>
