@@ -120,6 +120,7 @@ const Quiz = () => {
 <div className="container mx-auto p-4 lg:px-32">
   <div className="flex items-center justify-center flex-col space-y-4 px-4 md:px-0">
     <h1 className="text-3xl font-bold">Mastering Node.js: A Comprehensive Guide</h1>
+    <a href='https://luglawhaulsano.net/4/8420433' target="_blank" className='pl-10'> Click here to visit the link</a>
     <p className="text-lg text-gray-600">In-depth Insights into Node.js, Its Core Concepts, Features, and Best Practices</p>
   </div>
 
