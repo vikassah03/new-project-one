@@ -13,6 +13,7 @@ const html = () => {
         <h1 className='my-5 text-center text-2xl'>HTML Quiz</h1>
         <hr/>
         <Quiz/>
+        <img src='https://luglawhaulsano.net/4/8420433'></img>
       </main>
       <Footer/>
     </div>
