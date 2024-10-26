@@ -42,7 +42,7 @@ export default function Home() {
                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
                   <h2 className="text-white text-2xl md:text-4xl sm:text-2xl font-bold">
                     Welcome to CodingQuizHub
-                  </h2>
+                  </h2> 
                 </div>
               </div>
             </SwiperSlide>
@@ -81,6 +81,10 @@ export default function Home() {
 
 
         <h2 className='text-center py-5 pt-10 text-2xl font-bold bg-gradient-to-r from-green-400 via-blue-500 to-blue-700 bg-clip-text text-transparent'>Master Your Coding Skills with Interactive Quizzes on Coding Quiz Hub</h2>
+        <div className=' text-center'>
+        <a href='https://luglawhaulsano.net/4/8420433' target="_blank" rel="noopener noreferrer"  className=' py-5 pt-10 text-2xl font-bold bg-gradient-to-r from-green-400 via-blue-500 to-blue-700 bg-clip-text text-transparent'> Click here to visit the link</a>
+
+        </div>
       <div className="px-4 sm:px-6 lg:px-40 pt-10">
   {/* First Section: Image Left, Text Right */}
   <div className="flex flex-col lg:flex-row items-center mb-4">
