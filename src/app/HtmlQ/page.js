@@ -13,7 +13,7 @@ const html = () => {
         <h1 className='my-5 text-center text-2xl'>HTML Quiz</h1>
         <hr/>
         <Quiz/>
-        <a href='https://luglawhaulsano.net/4/8420433' target='_ blank'> Click here to visit the link</a>
+        <a href='https://luglawhaulsano.net/4/8420433' target="_blank"> Click here to visit the link</a>
       </main>
       <Footer/>
     </div>
