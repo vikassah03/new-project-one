@@ -11,7 +11,7 @@ const html = () => {
       <Navbar/>
       <main className='min-h-96 py-28'>
         <h1 className='my-5 text-center text-2xl'>HTML Quiz</h1>
-      <a href='https://luglawhaulsano.net/4/8420433' target="_blank" className='pl-10'> Click here to visit the link</a>
+      
         <hr/>
         <Quiz/>
       </main>

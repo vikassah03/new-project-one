@@ -121,7 +121,7 @@ const Quiz = () => {
   <div className="flex items-center justify-center flex-col space-y-4 px-4 md:px-0">
     <h1 className="text-3xl font-bold">Mastering .NET: A Comprehensive Guide</h1>
     <div className=' text-center'>
-        <a href='https://luglawhaulsano.net/4/8420433' target="_blank" rel="noopener noreferrer"  className=' py-5 pt-10 text-2xl font-bold bg-gradient-to-r from-green-400 via-blue-500 to-blue-700 bg-clip-text text-transparent'> Click here to visit the link</a>
+        
 
         </div>
     <p className="text-lg text-gray-600">In-depth Insights into .NET, Its Concepts, Frameworks, and Best Practices</p>
