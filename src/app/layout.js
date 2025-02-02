@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=G-HZXCR9YV9R`}
       />
-
+<script type='text/javascript' src='//pl25748443.profitablecpmrate.com/98/09/fc/9809fc1c07e49792d271d009f521c87c.js'></script>
       <script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
