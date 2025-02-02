@@ -25,6 +25,8 @@ export default function RootLayout({ children }) {
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=G-HZXCR9YV9R`}
       />
+      <script async="async" data-cfasync="false" src="//pl25748529.profitablecpmrate.com/973da03438430a67f8d94d103c0bff91/invoke.js"></script>
+      <div id="container-973da03438430a67f8d94d103c0bff91"></div>
 <script type='text/javascript' src='//pl25748443.profitablecpmrate.com/98/09/fc/9809fc1c07e49792d271d009f521c87c.js'></script>
       <script id="google-analytics" strategy="afterInteractive">
         {`
@@ -37,8 +39,8 @@ export default function RootLayout({ children }) {
       </Head>
       <body className={inter.className}>{children}
       <script type='text/javascript' src='//pl25747768.profitablecpmrate.com/fe/b2/3c/feb23c23606b1f21baabeb52d82aa42f.js'></script>
-      <script async="async" data-cfasync="false" src="//pl25748529.profitablecpmrate.com/973da03438430a67f8d94d103c0bff91/invoke.js"></script>
-      <div id="container-973da03438430a67f8d94d103c0bff91"></div>
+      
+      
       </body>
     </html>
   );
