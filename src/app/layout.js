@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
       </script>
       </Head>
       <body className={inter.className}>{children}
-
+      <script type='text/javascript' src='//pl25747768.profitablecpmrate.com/fe/b2/3c/feb23c23606b1f21baabeb52d82aa42f.js'></script>
       </body>
     </html>
   );
