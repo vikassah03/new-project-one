@@ -69,7 +69,7 @@ const Navbar = () => {
                 </div>
               </div>
               <NavLink href="/Privacypolicy" currentPath={currentPath}>Privacy Policy</NavLink>
-              <NavLink href="/TermsAndConditions" currentPath={currentPath}>Terms & Conditions</NavLink>
+              <NavLink href="/TermsAndConditions" currentPath={currentPath}>Blogs</NavLink>
               <NavLink href="/Contact" currentPath={currentPath}>Contact</NavLink>
             </div>
           </div>
