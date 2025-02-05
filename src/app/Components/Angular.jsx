@@ -124,7 +124,7 @@ const Quiz = () => {
         
 
         </div>
-    <p className="text-lg text-gray-600">In-depth Insights into Angular, Its Concepts, Versions, Best Practices, and More</p>
+    <p className="text-lg text-gray-600"> In-depth Insights into Angular, Its Concepts, Versions, Best Practices, and More</p>
   </div>
 
   <article className="mt-8 p-4">
@@ -144,7 +144,7 @@ const Quiz = () => {
     </section>
 
     <section className="mb-6">
-      <h2 className="text-xl font-semibold mb-2">Angular Core Concepts</h2>
+      <h2 className="text-xl font-semibold mb-2"> Angular Core Concepts</h2>
       <p>Angular is built around several core concepts that are essential to understand in order to use the framework effectively:</p>
       <ul className="list-disc list-inside pl-4">
         <li><strong>Components:</strong> The building blocks of Angular applications, components encapsulate the logic, template, and styles for a specific part of the UI.</li>
